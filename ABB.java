@@ -11,6 +11,8 @@ class ABB{
 		}else{
 			if(x<raiz.dato){
 				raiz.hIzq=new NodoABB(x);
+			}else{
+				raiz.hDer=new NodoABB(x);
 			}
 		}
 
