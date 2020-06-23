@@ -43,4 +43,35 @@ class ABB{
 			preorden(raiz.hDer);
 		}
 	}
+
+	public boolean buscar(int x){
+		if(raiz==null){
+			return false;
+		}else{
+			if(x==raiz.dato){
+				return true;
+			}else{
+				if(x<raiz.dato){
+					return buscar(x,raiz.hIzq);
+				}
+				else
+					return buscar(x,raiz.hDer);
+			}
+		}
+	}
+	private boolean buscar(int x, NodoABB raiz){
+		if(raiz==null){
+			return false;
+		}else{
+			if(x==raiz.dato){
+				return true;
+			}else{
+				if(x<raiz.dato){
+					return buscar(x,raiz.hIzq);
+				}
+				else
+					return buscar(x,raiz.hDer);
+			}
+		}
+	}
 }
