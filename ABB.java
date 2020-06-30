@@ -132,7 +132,7 @@ class ABB{
 						if(raiz.hIzq!=null&&raiz.hDer==null){//un hijo
 							raiz=raiz.hIzq;
 						}else{//tiene 2 hijos
-							raiz.dato=buscaMayorMenores(raiz.hIzq);//reemplaza el dato
+							raiz.dato=buscaMayorMenores(raiz);//reemplaza el dato
 							raiz.hIzq=eliminar(raiz.dato,raiz.hIzq);
 						}
 					}
