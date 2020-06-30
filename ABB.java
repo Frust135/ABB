@@ -74,4 +74,20 @@ class ABB{
 			}
 		}
 	}
+	public int buscaMayorMenores(){
+		if (raiz==null) return -1;
+		else return buscaMayorMenores(raiz);
+	}
+	private int buscaMayorMenores(NodoABB raiz){
+		NodoABB temp=raiz;
+		if (raiz==null) return -1;
+		else{
+		temp=temp.hIzq;
+			while (temp.hDer!=null) temp=temp.hDer;
+		}
+		return temp.dato;
+	}
+	public void eliminar(int x){
+
+	}
 }
