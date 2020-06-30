@@ -10,15 +10,8 @@ class AppABB{
 		//System.out.println("hijo izquierdo "+a.raiz.hIzq.dato);
 		//System.out.println("hijo derecho "+a.raiz.hDer.dato);
 		//System.out.println("hijo izquierdo del hijo izquierdo "+a.raiz.hIzq.hIzq.dato);
-		int dato=0;
-		if(a.buscar(dato))
-			System.out.println("El número "+dato+ " si existe en el árbol");
-		else
-			System.out.println("El número "+dato+ " no existe en el árbol");
-		a.eliminar(3);
-		a.preorden();
-		a.eliminar(2);
-		a.preorden();
+		a.inorden();
+
 	}
 
 }
