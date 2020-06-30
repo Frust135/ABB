@@ -16,7 +16,8 @@ class AppABB{
 			System.out.println("El número "+dato+ " si existe en el árbol");
 		else
 			System.out.println("El número "+dato+ " no existe en el árbol");
-
+		a.eliminar(8);
+		a.preorden();
 
 	}
 
