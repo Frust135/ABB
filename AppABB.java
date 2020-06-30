@@ -10,7 +10,7 @@ class AppABB{
 		//System.out.println("hijo izquierdo "+a.raiz.hIzq.dato);
 		//System.out.println("hijo derecho "+a.raiz.hDer.dato);
 		//System.out.println("hijo izquierdo del hijo izquierdo "+a.raiz.hIzq.hIzq.dato);
-		a.inorden();
+		a.postorden();
 
 	}
 
